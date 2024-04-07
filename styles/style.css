@@ -158,7 +158,7 @@
  font-weight: 700;
 }
 
-.font{
+.font {
   font-family: var(--font-family-Inter);
   font-size: 18px;
   font-weight: 400;
@@ -256,13 +256,13 @@
 
 .card__like-button:focus { /*тень*/
   box-shadow: 2px 2px var(--shadow);
-  transition: box-shadow 0.5s;  
+  transition: box-shadow 0.5s;
 }
 
 .card__like-button:focus-visible {
   box-shadow: 2px 2px var(--shadow);
-  transition: box-shadow 0.5s; 
-  outline: none; 
+  transition: box-shadow 0.5s;
+  outline: none;
 }
 
 .card-content { /*overflow*/
@@ -273,7 +273,7 @@
   width: 130px;
   height: 38px;
   position: relative;
-  top: -35px; 
+  top: -35px;
   right: 8px;
   z-index: -1;
 }
@@ -296,9 +296,9 @@
 
 @supports((text-stroke: 1px var(--label)) or (-webkit-text-stroke: 1px var(--label))) {
   .label {
-      -webkit-text-stroke: 0.1px var(--label);
-      text-stroke: 1px var(--label);
-      text-shadow: none;
+    -webkit-text-stroke: 0.1px var(--label);
+    text-stroke: 1px var(--label);
+    text-shadow: none;
   }
 } 
 
@@ -306,7 +306,7 @@
 .card_icon_button {
   border: none;
   background: none;
-  height: 34px; 
+  height: 34px;
   width: 39px;
   padding: 0px;
   margin-top: 2px;
@@ -319,10 +319,6 @@
 .sparks {
   opacity: 0;
   fill: var(--heart-sparks_color);
-}
-
-.like-icon .contour {
-  fill: var(--heart-contour_color);
 }
 
 /*Сердце При hover*/
@@ -341,22 +337,22 @@
 }
 
 .like-icon:hover .main-body {
-  fill: var(--heart-hover); 
-  transition: fill 0.3s linear 0.05s; 
+  fill: var(--heart-hover);
+  transition: fill 0.3s linear 0.05s;
 }
 
 /*Сердце При удержании*/
 .like-icon:active .core {
-  fill: var(--heart); 
+  fill: var(--heart);
   transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
-  fill: var(--heart); 
-  transition: fill 0.3s linear 0.05s; 
+  fill: var(--heart);
+  transition: fill 0.3s linear 0.05s;
 }
 
-@keyframes heartscale{
+@keyframes heartscale {
   0% {
     transform: scale(1);
   }
@@ -370,27 +366,27 @@
 
 /* Сердце При клике */
 .like-icon.is-liked .core {
-  fill: var(--heart); 
+  fill: var(--heart);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--heart); 
+  fill: var(--heart);
   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon .contour {
-  fill: var(--heart-contour_color); 
+  fill: var(--heart-contour_color);
   transition: fill 0.1s linear;
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--heart); 
+  fill: var(--heart);
   transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .heart {
-  animation: 0.3s ease-in 0.1s; 
+  animation: 0.3s ease-in 0.1s;
   transform-origin: center;
   animation-direction: alternate;
 }
@@ -440,20 +436,20 @@
 }
 
 .floppy { /*svg дискета*/
-  width: 21px; 
+  width: 21px;
   height: 21px;
   color: var(--diskette);
 }
 
 .card_save-button:focus { /*тень*/
   box-shadow: 2px 2px var(--shadow);
-  transition: box-shadow 0.5s;  
+  transition: box-shadow 0.5s;
 }
 
 .card_save-button:focus-visible { /*тень */
   box-shadow: 2px 2px var(--shadow);
-  transition: box-shadow 0.5s; 
-  outline: none; 
+  transition: box-shadow 0.5s;
+  outline: none;
 }
 
 .card_save-button:hover .save_card-content { /*overflow*/
@@ -481,7 +477,6 @@ dialog {
 
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.753);
-  
 } 
 
 .position-elements {
@@ -529,26 +524,26 @@ dialog::backdrop {
 
 .close-button:focus { /*тень*/
   box-shadow: 2px 2px var(--shadow);
-  transition: box-shadow 0.5s;  
+  transition: box-shadow 0.5s;
 }
 
 .close-button:focus-visible { /*тень */
   box-shadow: 2px 2px var(--shadow);
-  transition: box-shadow 0.5s; 
-  outline: none; 
+  transition: box-shadow 0.5s;
+  outline: none;
 }
 
 .close-button:hover .ok_card-content { /*overflow*/
   transform: translate(0);
 }
 
-.close-button:hover  .dialog_text{ /*изменения цвета текста*/
+.close-button:hover  .dialog_text { /*изменения цвета текста*/
   color: var(--text-color_overflow);
   transition: color 2s;
 }
 
 .diskette {
-  width: 39px; 
+  width: 39px;
   height: 39px;
   color: var(--diskette);
 }
@@ -587,7 +582,7 @@ dialog::backdrop {
     padding: 20px 26px 28px;
   }
 
-  .card_save-button{ 
+  .card_save-button {
     display: grid;
     width: 308px;
     height: 83px;
@@ -609,7 +604,7 @@ dialog::backdrop {
   .floppy {
     position: relative;
     left: 2px;
-    width: 32px; 
+    width: 32px;
     height: 32px;
   }
 
