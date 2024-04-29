@@ -12,3 +12,264 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+/* анимация Сердца */
+.like-icon .contour {
+  fill: var(--heart-contour_color);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .heart {
+  animation: 0.3s ease-in 0.1s;
+  transform-origin: center;
+  animation-direction: alternate;
+}
+
+.card__icon_button:focus-visible {
+  outline: 2px solid var(--contour);
+  outline: none;
+}
+
+.like-icon.is-liked .big {
+  fill: var(--heart);
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-name: asd;
+  transform-origin: center;
+  opacity: 0
+
+}
+
+@keyframes asd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.like-icon.is-liked .sparks {
+  fill: var(--heart);
+  animation-delay: 0.8s;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+  animation-name: asde;
+  transform-origin: center;
+  opacity: 0
+}
+
+@keyframes asde {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Сердце при hover*/
+.like-icon .core {
+  transition: fill 0.3s linear 0.05s;
+  fill: var(--heart-transparent_color);
+}
+
+.like-icon:hover .core {
+  fill: var(--heart-hover);
+  transition: fill 0.3s linear;
+}
+
+.like-icon .main-body {
+  transition: fill 0.3s linear;
+  fill: var(--heart-transparent_color);
+}
+
+.like-icon:hover .main-body {
+  fill: var(--heart-hover);
+  transition: fill 0.3s linear 0.03s;
+}
+
+/* Сердце при active*/
+.like-icon:active .core {
+  fill: var(--heart);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:active .big  {
+  fill: var(--heart);
+  animation-delay: 0.6s;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-name: asdr;
+  transform-origin: center;
+  opacity: 0
+}
+
+@keyframes asdr {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.like-icon:active .sparks {
+  fill: var(--heart);
+  animation-delay: 0.6s;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+  animation-name: asder;
+  transform-origin: center;
+  opacity: 0
+}
+
+@keyframes asder {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*keyframes*/
+@keyframes moving { /*анимация стрелка с боку*/
+  from {
+    translate: 0 0;
+  }
+  50% {
+    translate: -4px 0px;
+  }
+  to {
+    translate: 0 0px;
+  }
+}
+
+/*анимация кнопок*/
+.theme-menu__button:hover { /* изменения цвета кнопки в менью */
+  color: var(--color-text-menu);
+  transition: color 0.3s;
+}
+
+.theme-menu__button::after { /* основа подчеркивания*/
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  margin-top: 2px;
+  background-color: var(--text-color);
+  transition: width 300ms, background-color 0.3s;
+}
+
+.theme-menu__button:focus-visible { /*tab focus изменения цвета кнопки в менью*/
+  color: var(--hover-color-text-menu);
+  transition: color 0.3s;
+  outline: none;
+}
+
+.theme-menu__button:focus-visible::after { /*tab focus */
+  width: 100%;
+  background-color: var(--line-menu-background-color);
+  transition: width 0.3s, background-color 0.3s;
+  outline: none;
+}
+
+/*анимация  стрелки*/
+.theme-menu__button:disabled { /*цвет при активности со стрелкой*/
+  color: var(--disabled-color-text-menu);
+}
+
+/*кнопка Like*/
+.button__text:hover {
+  color: var(--text-color_overflow);
+  transition: color 2s;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px var(--shadow);
+  transition: box-shadow 0.5s;
+  outline: none;
+}
+
+.card__like-button:hover .card-content {
+  transform: translate(0);
+}
+
+/*Кнопка сохранения*/
+.card_save-button:focus-visible { /*тень */
+  box-shadow: 2px 2px var(--shadow);
+  transition: box-shadow 0.5s;
+  outline: none;
+}
+
+.card_save-button:hover .save_card-content { /*overflow*/
+  transform: translate(0);
+}
+
+.card_save-button:hover .floppy { /*изменения цвета дискеты*/
+  color: var(--diskette_overflow);
+  transition: 0.3s;
+}
+
+.card_save-button:hover .button-save_text { /*изменения цвета текста*/
+  color: var(--text-color_overflow);
+  transition: color 0.3s;
+}
+
+/* Кнопка всплывающего окна */
+.close-button:focus-visible { /*тень */
+  box-shadow: 2px 2px var(--shadow);
+  transition: box-shadow 0.5s;
+  outline: none;
+}
+
+.close-button:hover .ok_card-content { /*overflow*/
+  transform: translate(0);
+}
+
+.close-button:hover  .dialog_text { /*изменения цвета текста*/
+  color: var(--text-color_overflow);
+  transition: color 2s;
+}
