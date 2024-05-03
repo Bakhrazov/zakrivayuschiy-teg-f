@@ -2,14 +2,14 @@
 :root {
   --font-family: 'Press Start 2P';
   --font-family-Inter: 'Inter Variable';
-  --background-image: url(../svg/background-light.svg);
   --background-color: #ffffff;/*задний фон карточик*/
   --contour: #000000;/*контур*/
+  --text-color_like: #ffffff;
   --text-color: #000000;/*цвет текста*/
   --text-color_overflow: #ffffff;/*цвет текста*/
   --diskette: #000000;/*цвет дискета*/
   --diskette_overflow: #ffffff;/*цвет дискета*/
-  --overflow: rgb(0 0 0 / 0.8);
+  --overflow: rgb(0 0 0);
   --shadow: #000028;/*тень*/
   --label: #ffffff80;
   --label-color: #00000080;
@@ -22,4 +22,9 @@
   --heart-contour_color: #000000;
   --heart-sparks_color: #ff0000;
   --heart-transparent_color: #ffffff00;
+  /*Фон страницы*/
+  --main-color: #d3d3d3;
+  --transparent: #ffffff00;
+  --top-gradient: #e7e7e7;
+  --bottom-gradient: #1a1a1a;
 }

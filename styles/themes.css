@@ -7,14 +7,14 @@
 .theme-light {
   --font-family: 'Press Start 2P';
   --font-family-Inter: 'Inter Variable';
-  --background-image: url(../svg/background-light.svg);
   --background-color: #ffffff;/*задний фон карточик*/
   --contour: #000000;/*контур*/
+  --text-color_like: #ffffff;
   --text-color: #000000;/*цвет текста*/
   --text-color_overflow: #ffffff;/*цвет текста*/
   --diskette: #000000;/*цвет дискета*/
   --diskette_overflow: #ffffff;/*цвет дискета*/
-  --overflow: rgb(0 0 0 / 0.8);
+  --overflow: rgb(0 0 0);
   --shadow: #000028;/*тень*/
   --label: #ffffff80;
   --label-color: #00000080;
@@ -27,23 +27,28 @@
   --disabled-color-text-menu: #666666;
   --heart-contour_color: #000000;
   --heart-sparks_color: #ff0000; 
+  /*Фон страницы*/
+  --main-color: #d3d3d3;
+  --transparent: #ffffff00;
+  --top-gradient: #e7e7e7;
+  --bottom-gradient: #1a1a1a;
 }
 
 .theme-dark {
   --font-family: 'Press Start 2P';
   --font-family-Inter: 'Inter Variable';
-  --background-image: url(../svg/background-dark.svg);
   --background-color: #000000;/*задний фон карточик*/
   --contour: #00CC14;/*контур*/
+  --text-color_like: #00CC14;
   --text-color: #00CC14;/*цвет текста*/
   --text-color_overflow: #000000;/*цвет текста*/
   --diskette: #00CC14;/*цвет дискета*/
   --diskette_overflow: #000000;/*цвет дискета*/
   --overflow: #00CC14;
   --shadow: #00CC14;/*тень*/
-  --label: #00CC14;
-  --label-color: #00000080;
-  --heart: #FF0000;
+  --label-color: #00CC14;
+  --label: #000000;
+  --heart: #00CC14;
   --heart-hover: #000000;
   --heart-transparent_color: #ffffff00;
   --arrow: #007A0C;/*стрела*/
@@ -51,25 +56,30 @@
   --line-menu-background-color: #007A0C;
   --disabled-color-text-menu: #007A0C;
   --heart-contour_color: #00CC14;
-  --heart-sparks_color: #ff0000;
+  --heart-sparks_color: #00CC14;
+  /*Фон страницы*/
+  --main-color: #000;
+  --transparent: #ffffff00;
+  --top-gradient: #007f0c;
+  --bottom-gradient: #004306;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
   --font-family: 'Press Start 2P';
   --font-family-Inter: 'Inter Variable';
-  --background-image: url(../svg/background-dark.svg);
   --background-color: #000000;/*задний фон карточик*/
   --contour: #00CC14;/*контур*/
+  --text-color_like: #00CC14;
   --text-color: #00CC14;/*цвет текста*/
   --text-color_overflow: #000000;/*цвет текста*/
   --diskette: #00CC14;/*цвет дискета*/
   --diskette_overflow: #000000;/*цвет дискета*/
   --overflow: #00CC14;
   --shadow: #00CC14;/*тень*/
-  --label: #00CC14;
-  --label-color: #00000080;
-  --heart: #FF0000;
+  --label-color: #00CC14;
+  --label: #000000;
+  --heart: #00CC14;
   --heart-hover: #000000;
   --heart-transparent_color: #ffffff00;
   --arrow: #007A0C;/*стрела*/
@@ -77,7 +87,11 @@
   --line-menu-background-color: #007A0C;
   --disabled-color-text-menu: #007A0C;
   --heart-contour_color: #00CC14;
-  --heart-sparks_color: #ff0000;
+  --heart-sparks_color: #00CC14;
+  /*Фон страницы*/
+  --main-color: #000;
+  --transparent: #ffffff00;
+  --top-gradient: #007f0c;
+  --bottom-gradient: #004306;
   }
 }
-
