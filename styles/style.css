@@ -10,8 +10,6 @@
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
-
-
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 .page {
@@ -20,6 +18,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: var(--font-family-Inter);
+  font-variation-settings: 'wght' var(--width-text), var( --width-heading);
 }
 
 .page-background {
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: center;
   padding-top: 137px;
-  font-size: clamp(3.0625rem, -2.3104rem + 27.1186vw, 4.0625rem);
+  font-size: clamp(3.0625rem, 1.902rem + 4.9383vw, 4.0625rem);
 }
 
 .average_text {
@@ -150,13 +150,11 @@
  font-family: var(--font-family-Inter);
  border-bottom: 2px  solid var(--contour);
  font-size: 18px;
- font-weight: 700;
 }
 
 .font {
   font-family: var(--font-family-Inter);
   font-size: 18px;
-  font-weight: 400;
   line-height: 1.16;
 }
 
@@ -294,7 +292,7 @@
 } 
 
 /*  Сердце  */
-.card__icon-button { /*!!*/
+.card__icon-button {
   display: flex;
   border: none;
   background: none;
@@ -304,7 +302,7 @@
 }
 
 .framework_heart:focus-visible {
-  outline: 2px solid #000000;
+  outline: 2px solid var(--framework_heart);
   transform-origin: center;
   transition: 0.3s ease;
 } 

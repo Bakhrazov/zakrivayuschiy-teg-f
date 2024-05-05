@@ -1,7 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-family: 'Press Start 2P';
-  --font-family-Inter: 'Inter Variable';
+  --font-family: 'Press Start 2P', sans-serif;
+  --font-family-Inter: 'Inter Variable', sans-serif;
+  --width-text: 400;
+  --width-heading: 700;
   --background-color: #ffffff;/*задний фон карточик*/
   --contour: #000000;/*контур*/
   --text-color_like: #ffffff;
@@ -22,6 +24,7 @@
   --heart-contour_color: #000000;
   --heart-sparks_color: #ff0000;
   --heart-transparent_color: #ffffff00;
+  --framework_heart: #000000;
   /*Фон страницы*/
   --main-color: #d3d3d3;
   --transparent: #ffffff00;
